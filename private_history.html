@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+         <div w3-include-html="/common/title.html"></div>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favi/favicon.ico">
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favi/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favi/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favi/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favi/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favi/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favi/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favi/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favi/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favi/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favi/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favi/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favi/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favi/favicon-16x16.png">
+        <script type="text/javascript" src="/js/mosaross_script.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(function(){
+                includeHTML();
+                // 인클루드에 필요한 함수입니다.
+            });
+        </script>
+        
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/layer_01.css">
+        <link rel="stylesheet" href="css/board.css">
+        <link rel="stylesheet" href="css/layer_call.css">
+        <link rel="stylesheet" href="css/profile.css">
+
+    </head>
+    <body>
+        <div class="wrap_01">
+            <div w3-include-html="/menu/main_menu.html"></div>
+            <div class="wrap_sub_01">
+                <!-- 프로필 유저 이름 시작 -->
+                <div w3-include-html="/private/user_name_wrap.html"></div>
+                <!-- 프로필 유저 이름 끝 -->
+                <!-- 프로필 탭메뉴 시작 -->
+                 <div w3-include-html="/private/tab_wrap.html"></div>
+                <!-- 프로필 탭메뉴 끝 -->
+                <!-- 프로필 히스토리 현황판 시작 -->
+                <div w3-include-html="/private/tab_history.html"></div>
+                <!-- 프로필 히스토리 현황판 시작 -->
+                <div w3-include-html="/private/history_wrap.html"></div>
+            </div>
+            <div w3-include-html="/footer.html"></div>
+        </div>
+    </body>
+</html>

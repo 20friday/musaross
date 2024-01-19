@@ -1,0 +1,33 @@
+.pin_wrap{
+    width:auto;
+    display: inline-flex;
+    flex-direction:column;
+
+}
+
+.photo_congress{
+    width:48px;
+    border-radius: 48px;
+    box-sizing: border-box;
+
+}
+.photo_congress_02{
+    width:92px;
+    border-radius: 90px;
+    box-sizing: border-box;
+
+}
+.photo_congress_03{
+    width:34px;
+    border-radius: 90px;
+    box-sizing: border-box;
+
+}
+.pin_top{
+    text-align: center;
+}
+.pin_bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

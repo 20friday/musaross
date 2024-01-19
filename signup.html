@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <div w3-include-html="/common/title.html"></div>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favi/favicon.ico">
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favi/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favi/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favi/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favi/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favi/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favi/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favi/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favi/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favi/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favi/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favi/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favi/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favi/favicon-16x16.png">
+        <script type="text/javascript" src="/js/mosaross_script.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(function(){
+                includeHTML();
+                // 인클루드에 필요한 함수입니다.
+            });
+        </script>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/layer_01.css">
+        <link rel="stylesheet" href="css/board.css">
+        <link rel="stylesheet" href="css/layer_call.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/signup.css">
+    </head>
+    <body>
+        <div class="wrap_01">
+            <div w3-include-html="/menu/main_menu.html"></div>
+            <div class="wrap_sub_01">
+                <!-- SNS계정으로 가입했을경우 -->
+                <section class="line_01">
+                    <h2>SNS아이디</h2>
+                    <div w3-include-html="/signup/type_01.html"></div>
+                </section>
+                <!-- SNS계정으로 가입했을경우 -->
+                <section class="line_01">
+                    <h2>아이디(이메일주소)</h2>
+                    <div w3-include-html="/signup/type_02.html"></div>
+                    <article>
+                        <h4>“확실한 이메일을 사용해주세요.”</h4>
+                        <p>이메일 이외에 어떠한 정보도 수집하지 않기 때문에 가입한 이메일을 잊어버릴 경우, 찾을 수 있는 방법이 없습니다.</p>
+                    </article>
+                </section>
+                <section class="line_01">
+                    <h2>비밀번호</h2>
+                    <div w3-include-html="/signup/type_03.html"></div>
+                </section>
+                <section class="line_01">
+                    <h2>비밀번호 확인</h2>
+                    <div w3-include-html="/signup/type_03.html"></div>
+                </section>
+                <section class="line_01">
+                    <h2>닉네임</h2>
+                    <div w3-include-html="/signup/type_02.html"></div>
+                </section>
+                <section class="line_01">
+                    <div w3-include-html="/signup/location_table.html"></div>
+                </section>
+                <section class="all_agree">
+                    <button class="btn_01">
+                        전체 동의 하기<img src="/static/images/check_un.svg">
+                    </button>
+                    <!-- <button class="btn_01_check">
+                        전체 동의 하기<img src="/static/images/check_ok2.svg">
+                    </button> -->
+                </section>
+                <section class="agree_wrap">
+                    <div class="agree_01">
+                        <a href="#" class="title">■ 이용약관 동의(필수)</a>
+                        <button class="btn_01_un">동의하기 <img src="/static/images/check_un.svg"></button>
+                        <!-- <button class="btn_01_ok">동의하기 <img src="/static/images/check_ok2.svg"></button> -->
+                    </div>
+                    <div class="agree_01">
+                        <a href="#" class="title">■ 개인정보 수집 및 이용 동의(필수)</a>
+                        <button class="btn_01_un">동의하기 <img src="/static/images/check_un.svg"></button>
+                        <!-- <button class="btn_01_ok">동의하기 <img src="/static/images/check_ok2.svg"></button> -->
+                    </div>
+                </section>
+                <div class="confirm">
+                    <button class="btn_02">확인</button>
+                </div>
+            </div>
+            <div w3-include-html="/footer.html"></div>
+        </div>
+    </body>
+</html>

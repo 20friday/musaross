@@ -1,0 +1,51 @@
+.terms_01{
+    /* background-color: blanchedalmond; */
+    width: 100%;
+    max-width: 1024px;
+    padding: 35px 0px;
+    box-sizing: border-box;
+}
+.terms_01 h1{
+     color: #080808;
+     font-size: 2.0rem;
+     font-weight: 700;
+     line-height: 22px;
+     word-wrap: break-word;
+     padding: 0px 0 20px 0;
+}
+.terms_01 h3{
+    color: #080808;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 22px;
+    word-wrap: break-word;
+    padding: 0px 0px 0 10px;
+
+}
+.terms_01 p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    padding: 0px 0px 20px 10px;
+    color: #A1A1A1;
+
+}
+.table_01{
+    width: 100%;
+    text-align: center;
+    border:0.5px solid #A1A1A1;
+    border-collapse: collapse;
+}
+.table_01 th{
+    font-size: 1.4rem;
+    padding: 10px;
+    border:0.5px solid #A1A1A1;
+    border-collapse: collapse;
+}
+.table_01 tr,td{
+    border:0.5px solid #A1A1A1;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 1.4rem;
+    color: #A1A1A1;
+
+}

@@ -1,0 +1,27 @@
+
+.wrap_sub_01 .text{
+    text-align: center;
+    padding-top: 203px;
+}
+.wrap_sub_01 .btn_sns{
+    display: flex;
+    justify-content: center;
+}
+.wrap_sub_01 .text .text_01{
+    font-size: 1.6rem;
+    color: #A1A1A1;
+}
+
+.wrap_sub_01 .text .text_02{
+    font-size: 2rem;
+    color: #080808;
+}
+.btn_sns{
+    gap: 28px;
+    padding: 25px 0 0 0;
+}
+
+
+
+
+

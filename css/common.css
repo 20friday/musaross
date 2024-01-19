@@ -1,0 +1,385 @@
+/* 공통된 css입니다. */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+*{
+    list-style: none;
+    padding: 0 0;
+    margin: 0 0;
+    text-decoration: none;
+    font-size: 10px;
+    color: #080808;
+    letter-spacing: -0.41px;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    box-sizing: border-box;
+
+}
+html, body {
+	min-height: 100%;
+	height: 100%;
+}
+.wrap_01{
+    height: 100%;
+    min-height: calc(100vh - 173px);
+    position: relative;
+/* 푸터가 없을 경우의 랩입니다. */
+}
+.wrap_02{
+    height: 100%;
+    min-height: calc(100vh - 0px);    
+/* 푸터가 있는 경우의 랩입니다. */
+}
+.wrap_sub_01{
+    width: 100%;
+    min-height: calc(100% - 173px);    
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 47px 15px;
+    box-sizing: border-box;
+    /* 메뉴의 47px높이 만큼만 떨어져 있는 기본 서브랩입니다. */
+}
+
+
+/* 프로필 페이지에서 양쪽패딩 때문에 추가함 */
+/* .padding10px{ 
+    padding: 47px 10px 0 10px;
+} */
+
+/* 상단에 97px패딩이 있을 경우의 서브랩입니다. */
+.wrap_sub_02{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 91px 16px 0 16px;
+    box-sizing: border-box;
+}
+
+/* 뒤에 지도가 띄어져 있고 위에 레이어를 띄어야 할때의 서브랩입니다. */
+/* .wrap_sub_03{
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh + 0px);
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 0, 0, 0.7);
+
+} */
+
+.k_map{
+    width: 100%;
+    height: 100%;
+    min-height: calc(100vh + 0%);
+    position:absolute;
+    z-index: 1;
+    background-color: #00A0E2;
+
+
+}
+.menu_wrap{
+    width: calc(100% - 15px);
+    max-width: 1024px;
+    height: 47px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color:rgba(255, 255, 255, 0.3);
+    margin: 5px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    z-index: 100;
+    backdrop-filter: blur(1.5px);
+    
+}
+.event_menu_wrap{
+    width: calc(100% - 15px);
+    max-width: 1024px;
+    height: 47px;
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: transparent;
+    /* background-color:rgba(255, 255, 255, 0.3); */
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 0 16px;
+    z-index: 100;
+    gap: 15px;
+}
+
+.search_btn{
+    background-image: url("/static/images/search_btn.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: transparent;
+    min-width: 70px;
+    height: 22px;
+    border: none;
+    border-bottom: 1px solid rgba(08, 08, 08, 1);
+    padding: 0 20px 0 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: left;
+    cursor: pointer;
+
+}
+/* 토글 스위치 시작 */
+.switch {
+    position: relative;
+    display: block;
+    /* vertical-align: top; */
+    width: 92px;
+    height: 31px;
+    padding: 0px;
+    margin: 0 0 0 0;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .switch-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .switch-label {
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: rgba(203, 203, 203, 1);
+    border-radius: inherit;
+  }
+  .switch-label:before, .switch-label:after {
+    position: absolute;
+    color:#080808;
+
+    top: 50%;
+    margin-top: -.5em;
+    line-height: 1;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+  }
+  .switch-label:before {
+    content: attr(data-off);
+    right: 11px;
+    color:#080808;
+  }
+  .switch-label:after {
+    content: attr(data-on);
+    left: 11px;
+    color: #FFFFFF;
+    opacity: 0;
+  }
+  .switch-input:checked ~ .switch-label {
+    background:#080808;
+  }
+  .switch-input:checked ~ .switch-label:before {
+    opacity: 0;
+  }
+  .switch-input:checked ~ .switch-label:after {
+    opacity: 1;
+  }
+  .switch-handle {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 23px;
+    height: 23px;
+    background: #ffffff;
+    border-radius: 100%;
+  }
+  .switch-handle:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 6px;
+  }
+  .switch-input:checked ~ .switch-handle {
+    left: 65px;
+  }
+  /* Transition
+      ========================== */
+  .switch-label, .switch-handle {
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+  }
+  
+
+  /* 토글 스위치 끝 */
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo a img{
+    width: 138px;
+}
+
+.menu_01 ul li{
+    float: left;
+    height: 47px;
+    line-height: 47px;
+}
+.menu_01 ul li a{
+    font-weight: 500;
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.menu_01 ul li:first-child{
+    margin-right: 20px;
+}
+
+/* 푸터 */
+footer{
+    background-color: #F7F7F7;
+    height: 173px;
+    padding-top: 35px;
+}
+footer .footer_nav{
+    text-align: center;
+}
+footer .footer_nav>a{
+    font-size: 1.4rem;
+    padding: 0 10px;
+    border-right: 1px solid #A1A1A1;
+    color:rgba(161, 161, 161, 1);
+}
+footer .footer_nav>a:last-child{
+    border-right:none;
+}
+.footer_text{
+    text-align: center;
+    padding-top: 10px;
+}
+.footer_text li{
+    font-size: 1.4rem;
+    color: #080808; 
+}
+/* 푸터 */
+
+.Alert_01{
+    background-color: #ffffff;
+    width: 270px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15); border-radius: 20px;
+    flex-direction: column; justify-content: center; align-items: center; display: inline-flex;
+}
+.Alert_message{
+    width: 100%;
+    padding: 37px 0 37px 0;
+}
+.Alert_message p{
+    text-align: center; 
+    color: rgb(156, 29, 29); 
+    font-size: 1.6rem; 
+    font-weight: 500; 
+    line-height: 25px;
+}
+.Alert_btn{
+    display: flex;
+    width: 100%;
+    height: 58px;
+    align-items: center;
+    border-top: 0.50px rgba(60, 60, 67, 0.35) solid;
+    text-align: center;
+
+}
+.Alert_btn_left{
+    width: 100%;
+    height: 100%;
+    border-right: 0.50px #CBCBCB solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Alert_btn_left a{
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+.Alert_btn_right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Alert_btn_right a{
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+.Notification_01{
+    color: #A1A1A1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+.Notification_02{
+    color: #6378C6;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+.Notification_03{
+    color: #FF6165;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+.Notification_04{
+    color: #00AD1C;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+.pinborder_01{
+    /* 민주당 */
+    border: 2px #00A0E2 solid;
+}
+.pinborder_02{
+    /* 국민의힘 */
+    border: 2px #E61E2B solid;
+}
+.pinborder_03{
+    /* 정의당 */
+    border: 2px #FFED00 solid;
+}
+.pinborder_04{
+    /* 진보당 */
+    border: 2px #E60020 solid;
+}
+.pinborder_05{
+    /* 한국의희망 */
+    border: 2px #004A80 solid;
+}
+.pinborder_06{
+    /* 무소속 */
+    border: 2px #8C8C8C solid;
+}
