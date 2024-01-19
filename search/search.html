@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-         <div w3-include-html="/common/title.html"></div>
+        <div w3-include-html="/common/title.html"></div>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="shortcut icon" href="/images/favi/favicon.ico">
@@ -25,19 +25,22 @@
                 includeHTML();
                 // 인클루드에 필요한 함수입니다.
             });
-        </script>
-        
+        </script>        
         <link rel="stylesheet" href="/css/common.css">
-        <link rel="stylesheet" href="/css/layer_01.css">
-        <link rel="stylesheet" href="/css/board.css">
-        <link rel="stylesheet" href="/css/layer_call.css">
-        <link rel="stylesheet" href="/css/profile.css">
-
+        <link rel="stylesheet" href="/css/search.css">
     </head>
     <body>
-        <main class="wrap_01">
-            <section>여기에 검색창</section>
-            <section>여기에 노티창</section>
-        </main>
+        <div class="wrap_01">
+            <main class="wrap_sub_04">
+                <section class="search_wrap">
+                    <article class="search">
+                        <div><img src="/static/images/search_arrow.svg"></div>
+                        <input type="search" class="search_input" placeholder="이름을 검색해 보세요."/>
+                        <div><img src="/static/images/search_glasses.svg"></div>
+                    </article>
+                    <article>여기에 상황설명</article>
+                </section>
+            </main>
+        </div>
     </body>
 </html>
