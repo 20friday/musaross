@@ -17,3 +17,33 @@
     background-color:#ffffff;
 
 }
+
+.noti_wrap{
+    padding-left: 57px;
+    height: 57px;
+    position: relative;
+}
+
+.noti_01 {
+    position: absolute; 
+    top: 11px;
+	background:rgba(255, 97, 101, 1);
+    height: 34px;
+    border-radius: 10px;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 0 10px;
+}
+
+.noti_01:after {
+    content:""; 
+    position: absolute; 
+    top: -7px; 
+    left: 20px;
+    border-left: 7px solid transparent; 
+    border-right: 7px solid transparent; 
+    border-bottom: 7px solid rgba(255, 97, 101, 1);
+}
