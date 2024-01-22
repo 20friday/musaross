@@ -70,23 +70,54 @@
 
 /* 검색 결과 */
 .congress_card{
-    background-color: #CBCBCB;
+    background-color: #ffffff;
     display: flex;
     justify-content:flex-start;
     align-items: center;
     max-width: 500px;
     margin: 0 auto;
     border-radius: 20px;
-    height: 128px;
-    padding: 15px 24px;
+    padding: 24px 24px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
 }
 
 .photo_congress_01{
     width: 77px;
+    height: 77px;
     border-radius: 100%;
+    margin-right: 15px;
 }
-.info_congress{
-    background-color: bisque;
-}
+.info_congress .text_st_01{
+    font-size: 1.6rem;
+    color: rgba(161, 161, 161, 1);
+    padding-right: 7px;
 
+}
+.info_congress .text_st_02{
+    font-size: 2.0rem;
+    color:rgba(8, 8, 8, 1);
+    padding-right: 7px;
+    font-weight: 800;
+
+}
+.info_congress .text_st_03{
+    font-size: 1.4rem;
+    color:rgba(8, 8, 8, 1);
+    font-weight: 400;
+
+}
+.info_congress .text_st_04{
+    font-size: 1.2rem;
+    color:rgba(203, 203, 203, 1);
+    padding-right: 7px;
+    font-weight: 400;
+
+}
+.info_congress .text_st_05{
+    font-size: 1.4rem;
+    color:rgba(8, 8, 8, 1);
+    padding-right: 7px;
+    font-weight: 400;
+
+}
 /* 검색 결과 */

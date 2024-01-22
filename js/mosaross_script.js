@@ -37,7 +37,7 @@ function showAboutUs(id){
     let $button         = $('.button'),
     $modalContainer = $('#modal-container'),
     $body           = $('body'),
-    $content        = $('.content'),
+    // $content        = $('.content'),
     btnId = id;
 
     console.log("click!!!!");
@@ -46,15 +46,15 @@ function showAboutUs(id){
     $modalContainer
         .removeAttr('class')
         .addClass(btnId);
-    $content
-        .removeAttr('class')
-        .addClass('content');
+    // $content
+    //     .removeAttr('class')
+    //     .addClass('content');
     
     $body.addClass('modal-active');
     
     if (btnId == 'two' || btnId == 'three'|| btnId == 'four') {
         console.log("btnId2", btnId);
-        $content.addClass(btnId);
+        // $content.addClass(btnId);
     }
 }
 
@@ -63,7 +63,7 @@ function closeAboutUs(id){
     let $button         = $('.button'),
     $modalContainer = $('#modal-container'),
     $body           = $('body'),
-    $content        = $('.content'),
+    // $content        = $('.content'),
     btnId = id;
     
 
@@ -72,7 +72,7 @@ function closeAboutUs(id){
     console.log("out11111");
     if ($modalContainer.hasClass(btnId)) {
         console.log("out");
-        $content.addClass('out');
+        // $content.addClass('out');
         
     }
 }
