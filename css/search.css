@@ -17,17 +17,16 @@
     background-color:#ffffff;
 
 }
-
+/* 검색창 말풍선 정보 */
 .noti_wrap{
     padding-left: 57px;
     height: 57px;
     position: relative;
 }
 
-.noti_01 {
+.noti_said {
     position: absolute; 
     top: 11px;
-	background:rgba(255, 97, 101, 1);
     height: 34px;
     border-radius: 10px;
     color:#ffffff;
@@ -38,12 +37,33 @@
     padding: 0 10px;
 }
 
-.noti_01:after {
+.noti_said:after {
     content:""; 
     position: absolute; 
     top: -7px; 
     left: 20px;
     border-left: 7px solid transparent; 
     border-right: 7px solid transparent; 
+
+}
+
+.noti_01{
+	background:rgba(203, 203, 203, 1);
+}
+.noti_01:after{
+    border-bottom: 7px solid rgba(203, 203, 203, 1)
+}
+
+.noti_02{
+	background:rgba(99, 120, 198, 1);
+}
+.noti_02:after{
+    border-bottom: 7px solid rgba(99, 120, 198, 1);
+}
+.noti_03{
+	background: rgba(255, 97, 101, 1);
+}
+.noti_03:after{
     border-bottom: 7px solid rgba(255, 97, 101, 1);
 }
+/* 검색창 말풍선 정보 */
