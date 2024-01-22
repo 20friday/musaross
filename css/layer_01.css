@@ -54,18 +54,56 @@
     width: 13px;
 
 }
-
-
-.about_us{
-    background-color:rgba(44, 44, 44, 1);
+/* 어바웃어스 레이어 띄우기 시작*/
+/* 배경을 어둡게 하는 레이어 스타일 */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center; /* 중앙 정렬을 위해 변경 */
+    align-items: center;
+    animation: fadeIn 0.4s ease-out;
+}
+
+/* 모달 스타일 */
+.about_us {
+    background-color:rgba(44, 44, 44, 1);
+    width: 100%;
+    height: auto;
     max-width: 800px;
-    margin: 87px auto 50px auto;
+    margin: 0px auto 0px auto;
     position: relative;
     border-radius: 20px;
-     
+    transform: translateY(100%);
+    transition: transform 0.4s ease-out;
+    animation: slideIn 0.4s ease-out; /* 추가: 슬라이드 애니메이션 */
 }
+
+/* 모달 열기 애니메이션 */
+.overlay.show {
+    display: flex;
+}
+
+.overlay.show .about_us {
+    transform: translateY(0);
+}
+
+/* @keyframes 정의 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+/* 어바웃어스 레이어 띄우기 끝*/
+
 .right{
     display: flex;
     justify-content: end;
@@ -73,6 +111,9 @@
 .about_us .logo{
     display: flex;
     justify-content: center;
+}
+.cursor_view{
+    cursor: pointer;
 }
 .text_wrap{
     display: flex;

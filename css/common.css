@@ -252,6 +252,11 @@ textarea:-ms-input-placeholder {color:#ccc;}
     float: left;
     height: 47px;
     line-height: 47px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+
 }
 .menu_01 ul li a{
     font-weight: 500;

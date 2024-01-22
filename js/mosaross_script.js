@@ -32,50 +32,65 @@ function hi(){
 }
 
 //어바웃어스 레이어 띄우기 시작//
-function showAboutUs(id){
+// function showAboutUs(id){
 
-    let $button         = $('.button'),
-    $modalContainer = $('#modal-container'),
-    $body           = $('body'),
-    // $content        = $('.content'),
-    btnId = id;
+//     let $button         = $('.button'),
+//     $modalContainer = $('#modal-container'),
+//     $body           = $('body'),
+//     $content        = $('.content'),
+//     btnId = id;
 
-    console.log("click!!!!");
-    console.log("btnId", btnId);
+//     console.log("click!!!!");
+//     console.log("btnId", btnId);
     
-    $modalContainer
-        .removeAttr('class')
-        .addClass(btnId);
-    // $content
-    //     .removeAttr('class')
-    //     .addClass('content');
+//     $modalContainer
+//         .removeAttr('class')
+//         .addClass(btnId);
+//     $content
+//         .removeAttr('class')
+//         .addClass('content');
     
-    $body.addClass('modal-active');
+//     $body.addClass('modal-active');
     
-    if (btnId == 'two' || btnId == 'three'|| btnId == 'four') {
-        console.log("btnId2", btnId);
-        // $content.addClass(btnId);
-    }
-}
+//     if (btnId == 'two' || btnId == 'three'|| btnId == 'four') {
+//         console.log("btnId2", btnId);
+//         $content.addClass(btnId);
+//     }
+// }
 
-function closeAboutUs(id){
+// function closeAboutUs(id){
 
-    let $button         = $('.button'),
-    $modalContainer = $('#modal-container'),
-    $body           = $('body'),
-    // $content        = $('.content'),
-    btnId = id;
+//     let $button         = $('.button'),
+//     $modalContainer = $('#modal-container'),
+//     $body           = $('body'),
+//     $content        = $('.content'),
+//     btnId = id;
     
 
-    $modalContainer.addClass('out');
-    $body.removeClass('modal-active');
-    console.log("out11111");
-    if ($modalContainer.hasClass(btnId)) {
-        console.log("out");
-        // $content.addClass('out');
+//     $modalContainer.addClass('out');
+//     $body.removeClass('modal-active');
+//     console.log("out11111");
+//     if ($modalContainer.hasClass(btnId)) {
+//         console.log("out");
+//         $content.addClass('out');
         
-    }
-}
+//     }
+// }
 //어바웃어스 레이어 띄우기 끝//
+
+
+//어바웃어스 레이어 띄우기 242211//
+    // 모달 열기
+    function openModal() {
+        const overlay = document.getElementById('overlay');
+        overlay.classList.add('show');
+    }
+
+    // 모달 닫기
+    function closeModal() {
+        const overlay = document.getElementById('overlay');
+        overlay.classList.remove('show');
+    }
+//어바웃어스 레이어 띄우기 242211//
 
 
