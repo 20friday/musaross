@@ -67,3 +67,26 @@
     border-bottom: 7px solid rgba(255, 97, 101, 1);
 }
 /* 검색창 말풍선 정보 */
+
+/* 검색 결과 */
+.congress_card{
+    background-color: #CBCBCB;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 128px;
+    padding: 15px 24px;
+}
+
+.photo_congress_01{
+    width: 77px;
+    border-radius: 100%;
+}
+.info_congress{
+    background-color: bisque;
+}
+
+/* 검색 결과 */
