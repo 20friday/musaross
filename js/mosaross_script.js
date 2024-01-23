@@ -43,6 +43,4 @@ function hi(){
         const overlay = document.getElementById('overlay');
         overlay.classList.remove('show');
     }
-//어바웃어스 레이어 띄우기 242211//
-
 
