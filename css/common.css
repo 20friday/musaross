@@ -40,7 +40,7 @@ textarea:-ms-input-placeholder {color:#ccc;}
     min-height: calc(100% - 173px);    
     max-width: 1024px;
     margin: 0 auto;
-    padding: 47px 15px;
+    padding: 47px 15px 0 15px;
     box-sizing: border-box;
     /* 메뉴의 47px높이 만큼만 떨어져 있는 기본 서브랩입니다. */
 }

@@ -31,54 +31,6 @@ function hi(){
     alert("hi2");
 }
 
-//어바웃어스 레이어 띄우기 시작//
-// function showAboutUs(id){
-
-//     let $button         = $('.button'),
-//     $modalContainer = $('#modal-container'),
-//     $body           = $('body'),
-//     $content        = $('.content'),
-//     btnId = id;
-
-//     console.log("click!!!!");
-//     console.log("btnId", btnId);
-    
-//     $modalContainer
-//         .removeAttr('class')
-//         .addClass(btnId);
-//     $content
-//         .removeAttr('class')
-//         .addClass('content');
-    
-//     $body.addClass('modal-active');
-    
-//     if (btnId == 'two' || btnId == 'three'|| btnId == 'four') {
-//         console.log("btnId2", btnId);
-//         $content.addClass(btnId);
-//     }
-// }
-
-// function closeAboutUs(id){
-
-//     let $button         = $('.button'),
-//     $modalContainer = $('#modal-container'),
-//     $body           = $('body'),
-//     $content        = $('.content'),
-//     btnId = id;
-    
-
-//     $modalContainer.addClass('out');
-//     $body.removeClass('modal-active');
-//     console.log("out11111");
-//     if ($modalContainer.hasClass(btnId)) {
-//         console.log("out");
-//         $content.addClass('out');
-        
-//     }
-// }
-//어바웃어스 레이어 띄우기 끝//
-
-
 //어바웃어스 레이어 띄우기 242211//
     // 모달 열기
     function openModal() {
