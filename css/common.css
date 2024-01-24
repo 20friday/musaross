@@ -35,6 +35,8 @@ textarea:-ms-input-placeholder {color:#ccc;}
     min-height: calc(100vh - 0px);    
 /* 푸터가 있는 경우의 랩입니다. */
 }
+
+/* 메뉴의 47px높이 만큼만 떨어져 있는 기본 서브랩입니다. */
 .wrap_sub_01{
     width: 100%;
     min-height: calc(100% - 173px);    
@@ -42,8 +44,21 @@ textarea:-ms-input-placeholder {color:#ccc;}
     margin: 0 auto;
     padding: 47px 15px 0 15px;
     box-sizing: border-box;
-    /* 메뉴의 47px높이 만큼만 떨어져 있는 기본 서브랩입니다. */
 }
+/* 뒤에 지도가 띄어져 있고 위에 레이어를 띄어야 할때의 서브랩입니다. */
+.wrap_sub_03{
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh + 0px);
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: rgba(8, 8, 8, 0.7);
+
+}
+
 .wrap_sub_04{
     width: 100%;
     min-height: calc(100% - 173px);    
@@ -68,19 +83,7 @@ textarea:-ms-input-placeholder {color:#ccc;}
     box-sizing: border-box;
 }
 
-/* 뒤에 지도가 띄어져 있고 위에 레이어를 띄어야 할때의 서브랩입니다. */
-/* .wrap_sub_03{
-    z-index: 3;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    min-height: calc(100vh + 0px);
-    margin: 0 auto;
-    padding: 0 10px;
-    box-sizing: border-box;
-    background-color: rgba(255, 0, 0, 0.7);
 
-} */
 
 .k_map{
     width: 100%;
